@@ -1,4 +1,4 @@
-
+ #Fizz Buzz problem Number : 412
 n = 15
 def fizzBuzz(n):
     li= []
