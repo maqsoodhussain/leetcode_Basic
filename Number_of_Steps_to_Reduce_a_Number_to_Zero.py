@@ -2,7 +2,7 @@
 # Number of Steps to Reduce a Number to Zero Problem Number : 1342
 def fun(num):
     count = 0
-    while (num != 0):
+    while (num > 0):
         if num % 2 == 0:
             num = num / 2  
         else:
@@ -11,5 +11,5 @@ def fun(num):
         count += 1
     print(count)
      
-fun(8)
+fun(77)
 #print(123//2)
