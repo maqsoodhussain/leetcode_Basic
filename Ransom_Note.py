@@ -1,17 +1,16 @@
 # Ransom Note problem Number : 383
 def rm(ransomNote, Magazine):
-    for i in range(0,len(ransomNote)):
-        if ransomNote[i] != magazine[i]:
+    for char in set(ransomNote):
+        if ransomNote.count(char) > magazine.count(char):
             return False
-                
     return True
 
        
         
             
                 
-ransomNote = "aa"
-magazine = "aab"          
+ransomNote = "aab"
+magazine = "baa"          
 print(rm(ransomNote,magazine)) 
 
 
